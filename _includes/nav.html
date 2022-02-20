@@ -1,0 +1,13 @@
+<ul class="links">
+  <li class="{% if page.url == "/" %} active {% endif %}"><a href="{{ "/" | absolute_url }}">Home</a></li>
+  <li class="{% if page.url contains '/about/' %} active {% endif %}"><a href="{{ "/about/" | absolute_url }}">About</a></li>
+  <li class="{% if page.url contains '/elements/' %} active {% endif %}"><a href="{{ "/elements/" | absolute_url }}">Resume</a></li>
+  <li class="{% if page.url contains '/blog/' %} active {% endif %}"><a href="{{ "/blog/" | absolute_url }}">Blog</a></li>
+</ul>
+
+<ul class="icons">
+  <li><a href="https://twitter.com/dundertcheep" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+  <li><a href="https://www.instagram.com/michael.kerleypics/" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+  <li><a href="https://github.com/kerleym" class="icon alt fa-github"><span class="label">Github</span></a></li>
+  <li><a href="https://dribbble.com/mdk007" class="icon alt fa-dribbble"><span class="label">Dribbble</span></a></li>
+</ul>
